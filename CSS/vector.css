@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#vector{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9); 
+    color: white;
+    padding: 10px;
+}
+.headings{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 450px;
+    height: 450px;
+    margin: 20px;
+}
+a:hover{
+    opacity: 50%;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}

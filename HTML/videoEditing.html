@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/vector.css">
+  <link rel="stylesheet" href="/CSS/video.css">
+  <link rel="stylesheet" href="/CSS/index.css">
+  <link rel="stylesheet" href="/CSS/order.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Softocular</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <h2 class="logo">SOFTO<span>CULAR</span>.</h2>
+    <ul>
+      <li><a href="/HTML/index.html">HOME</a></li>
+      <li><a href="/HTML/service.html">SERVICES</a></li>
+      <li><a href="/HTML/works.html">WORKS</a></li>
+      <div class="dropdown">
+        <li><a href="/HTML/portfolio.html"> PORTFOLIO </a></li>
+        <div class="dropdown-content">
+          <a href="/HTML/vector.html">Vector Portrait</a>
+          <a href="/HTML/logo.html">Minimal Logo Design</a>
+          <a href="/HTML/video.html">Animated Video</a>
+          <a href="/HTML/ui.html">UI/UX Design</a>
+          <a href="/HTML/web.html">Web Developing</a>
+          <a href="/HTML/app.html">App Developing</a>
+          <a href="/HTML/videoEditing.html">Video Editing</a>
+          <a href="/HTML/photography.html">Photography</a>
+        </div>
+      </div>
+      <li><a href="/HTML/testimonial.html">TESTIMONIAL</a></li>
+      <li><a href="/HTML/about.html">ABOUT</a></li>
+      <li><a href="/HTML/contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <section id="vector">
+
+    <h1 class="headings">Video Editing</h1>
+    <div class="at-first">
+      <button id="order-button" onclick="openform()">Order Now</button>
+    </div>
+
+    <div class="pop-up" id="order-page">
+      <div class="for-cancel" onclick="closeform()">&times;</div>
+      <div class="order-form">
+        <h1>Order Form</h1>
+        <form>
+          <p>Full Name:</p>
+
+          <input id="name" type="text" name="Name" Placeholder="Enter Your Full Name" required>
+          <p>Email address:</p>
+          <input id="email" type="email" name="Email" Placeholder="Enter Your Email Address" required>
+
+          <p>Portfolio Type:</p>
+          <select id="portfolio" onchange="amount()">
+            <option value="selection">Select Portfolio Type</option>
+            <option value="Vector Portrait">Vector Portrait</option>
+            <option value="Minimal Logo Design">Minimal Logo Design</option>
+            <option value="Animated Video">Animated Video</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+            <option value="Web Developing">Web Developing</option>
+            <option value="App Developing">App Developing</option>
+            <option value="Video Editing" selected>Video Editing</option>
+            <option value="Photography">Photography</option>
+          </select>
+
+          <p>Total Payment:</p>
+          <input id="money" type="text" value="2000">
+
+          <!-- <legend>Please select your payment method:</legend> -->
+          <p>Please select your payment method:</p>
+          <select id="payment">
+            <option value="selection">Select Payment Method</option>
+            <option value="bkash">Bkash</option>
+            <option value="nagad">Nagad</option>
+            <option value="rocket">Rocket</option>
+          </select>
+          <!-- <div class="radio">
+            <input type="radio" id="bkash" name="payment" value="bkash">
+            <label for="bkash">Bkash</label>
+            <input type="radio" id="nagad" name="payment" value="nagad">
+            <label for="nagad">Nagad</label>
+            <input type="radio" id="rocket" name="payment" value="rocket">
+            <label for="rocket">Rocket</label>
+          </div> -->
+
+          <p>Phone Number:</p>
+          <input id="phone" type="text" name="phone" placeholder="Entery Your Payment Number" required>
+          <p>Transaction Id:</p>
+          <input id="transaction" type="text" name="transaction" placeholder="Entery The Transaction Id" required>
+          <!-- <p>Provide Image(If required)</p> -->
+          <input id="file" type="file" accept="image/*">
+          <button type="submit" onclick="paid()">Submit Order</button>
+        </form>
+      </div>
+
+
+    </div>
+
+    <div class="gallery">
+      <iframe src="https://www.youtube.com/embed/csqqQRlzk_o"> </iframe>
+      <iframe src="https://www.youtube.com/embed/mjmSo_zFTuQ"></iframe>
+      <iframe src="https://www.youtube.com/embed/z9i_8-Omvc0"></iframe>
+      <iframe src="https://www.youtube.com/embed/eIc2JHM-aU8"></iframe>
+      <iframe src="https://www.youtube.com/embed/tqgXgOdr5Io"></iframe>
+    </div>
+
+  </section>
+  <script src="/JS/order.js"></script>
+  <script src="/JS/payment.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/admin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" />
+
+  <title>Softocular</title>
+</head>
+
+<body>
+
+  <div class="content">
+    <h2>Admin Panel</h2>
+  </div>
+
+
+  <div class="include">
+    <div class="sidebar">
+      <a href="/HTML/admin.html">Contact</a>
+      <a class="active" href="/HTML/adminOrder.html">Order</a>
+      <a href="/HTML/index.html">Return to Home</a>
+    </div>
+
+    <div class="container">
+      <h2 class="before-table">Order Information</h2>
+      <div class="table">
+
+        <table class="employee-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Order Type</th>
+              <th>Amount</th>
+              <th>Method</th>
+              <th>Phone</th>
+              <th>Transc. Id</th>
+              <th>File</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+
+          <tbody id="table_order"></tbody>
+
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="/JS/admin_order.js"></script>
+</body>
+
+</html>

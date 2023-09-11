@@ -1,0 +1,11 @@
+.gallery iframe{
+    width: 420px;
+    height: 350px;
+    margin: 20px;
+}
+iframe:hover{
+    transform: scale(1.03);
+    opacity: 70%;
+}
+
+/* frameBorder="0" */

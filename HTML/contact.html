@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/CSS/contact.css">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <title>Softocular</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <h2 class="logo">SOFTO<span>CULAR</span>.</h2>
+        <ul>
+            <li><a href="/HTML/index.html">HOME</a></li>
+            <li><a href="/HTML/service.html">SERVICES</a></li>
+            <li><a href="/HTML/works.html">WORKS</a></li>
+            <div class="dropdown">
+                <li><a href="/HTML/portfolio.html"> PORTFOLIO </a></li>
+                <div class="dropdown-content">
+                    <a href="/HTML/vector.html">Vector Portrait</a>
+                    <a href="/HTML/logo.html">Minimal Logo Design</a>
+                    <a href="/HTML/video.html">Animated Video</a>
+                    <a href="/HTML/ui.html">UI/UX Design</a>
+                    <a href="/HTML/web.html">Web Developing</a>
+                    <a href="/HTML/app.html">App Developing</a>
+                    <a href="/HTML/videoEditing.html">Video Editing</a>
+                    <a href="/HTML/photography.html">Photography</a>
+
+                </div>
+            </div>
+            <li><a href="/HTML/testimonial.html">TESTIMONIAL</a></li>
+            <li><a href="/HTML/about.html">ABOUT</a></li>
+            <li><a class="selected" href="#">CONTACT</a></li>
+        </ul>
+    </div>
+    <section id="contact">
+        <h1 class="section-header">GET IN TOUCH</h1>
+        <div class="contact-wrapper">
+            <form class="form" id="myform">
+                <input type="text" id="name" class="input" placeholder="Enter Your Name" required>
+                <input type="email" id="email" class="input" placeholder="Enter Your Email" required>
+                <textarea id="msg" cols="30" rows="10" placeholder="Enter Your Message" required></textarea>
+                <button id="send" onclick="loadDoc()">SEND</button>
+            </form>
+
+            <div class="direct-contact-container">
+                <ul class="contact-list">
+                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">
+                                <a href="https://goo.gl/maps/rgsNL1UeBCPYmPZb6"> Jahangirnagar University, Bangladesh
+                                </a></span></i></li>
+
+                    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone">
+                                <a href="tel:+8801627883938" title="Give me a call">+8801627883938</a></span></i></li>
+
+                    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail">
+                                <a href="mailto:developer.softocular@gmail.com"
+                                    title="Send me an email">developer.softocular@gmail.com</a></span></i></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="at-first">
+            <button id="login-button" onclick="openform()">Admin Login</button>
+        </div>
+
+        <div class="pop-up" id="login-page">
+            <div class="for-cancel" onclick="closeform()">&times;</div>
+            <div class="log-in-form">
+                <h1>Admin Log-In Form</h1>
+                <form>
+                    <p>Email address</p>
+                    <input type="text" id="aEmail" name="Email" Placeholder="Email Address" required>
+                    <p>Password</p>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <button onclick="loginAdmin()">Log in</button>
+                </form>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <script src="/JS/contact.js"></script>
+    <script src="/JS/ContactButton.js"></script>
+    <script src="/JS/admin_login.js"></script>
+</body>
+
+</html>

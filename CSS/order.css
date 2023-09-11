@@ -1,0 +1,154 @@
+.at-first{
+    position: absolute;
+    top:18%;
+    left: 80%;   
+    transform: translate(-50%,-50%);
+}
+.at-first button{
+    display: block;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    background: orange;
+    color: seashell;
+    
+}
+
+.pop-up{
+    display: none;
+    position: absolute;
+    margin-top:200px;
+    margin-left:500px;
+    /* left:50%; */
+    /* transform: translate(-50%,-50%); */
+    width: 500px;
+    padding: 20px 30px;
+    background: orange;
+    box-shadow: 2px 2px 5px 5px rgb(26, 25, 25);
+    border-radius: 5px;
+    z-index: 1;
+}
+.for-cancel{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 15px;
+    background: rgb(255, 252, 252);
+    color:orange;
+    cursor: pointer;
+}
+
+.order-form h1{
+    text-align: center;
+    margin: 5px 0 10px 0;
+    color: #ffffff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    
+  }
+
+  .order-form p{
+    font-size: 16px;
+    margin: 2px 5px;
+    color: rgb(255 255 255);
+ 
+ }
+
+ input[type=text],input[type=email],select{
+    font-size: 16px;
+    width:97%;
+    padding: 10px 7px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    margin: 0 5px 5px 5px;
+    
+}
+
+input[type=file] {
+    /* position: absolute; */
+    display: inline-block;
+    background-color: #ffffff;
+    border:0;
+    border-radius: 5px;
+    color: #000000;
+    text-align: center;
+    font-size: 15px;
+    padding: 8px;
+    width: 97%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+input[type=text]:focus,input[type=email]:focus,select:focus{
+    border: 2px solid rgba(0, 0, 0, 0.829);
+}
+
+.radio:first-of-type{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+input[type=radio]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  
+    border: 2px solid rgb(255, 251, 251);
+    transition: 0.2s all linear;
+    margin-right: 5px;
+  
+    position: relative;
+    top: 4px;
+  }
+  
+input[type=radio]:checked {
+    border: 6px solid rgb(5, 5, 5);
+  }
+label {
+    margin-right: 15px;
+    line-height: 32px;
+    /* color: black; */
+  }
+  /* legend {
+    color: white;
+    background-color: black;
+    margin: 2px 5px;
+    padding: 5px 10px;
+    border-radius: 0;
+    border: 0;
+    font-size: 14px;
+  } */
+
+
+.order-form button{
+    font-size: 18px;
+    font-weight: bold;
+    margin:20px 5px 0px 5px;
+    padding: 10px 15px;
+    width:97%;
+    border-radius: 40px;
+    background: white;
+    color: orange;
+    border: 3px solid orange;
+ }
+
+ .order-form button:hover{
+    background: orange;
+    color: white;
+    border: 3px solid white;
+
+ }

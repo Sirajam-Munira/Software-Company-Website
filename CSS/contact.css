@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    /* padding-bottom: 100px; */
+}
+  
+#contact {
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+  }
+  
+  .section-header {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+    color: orange;
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    max-width: 1200px;
+  }
+  
+  
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+    width: 50%;
+
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 90%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 90%;
+    padding: 12px;
+    margin: 15px;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+#send{
+    padding: 10px;
+    width: 20%;
+    margin: 20px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    background-color: white;
+    color: orange;
+    box-shadow: 0 0 10px white;
+    font-weight: bold;
+}
+  
+  /* Location, Phone, Email Section */
+  .contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+    padding-top: 40px;
+  }
+  
+  .list-item {
+    line-height: 4;
+    color: orange;
+  }
+  
+  .contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+  }
+  
+  .place {
+    margin-left: 62px;
+  }
+  
+  .phone {
+    margin-left: 56px;
+  }
+  
+  .gmail {
+    margin-left: 53px;
+  }
+  
+  .contact-text a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+  .contact-text a:hover {
+    color: orange;
+    text-decoration: none;
+  }
+
+
+  .at-first{
+    position: absolute;
+    top:80%;
+    left: 80%;   
+    transform: translate(-50%,-50%);
+}
+.at-first button{
+  display: block;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  border:none;
+  outline:none;
+  cursor:pointer;
+  background: orange;
+  color: seashell;
+    
+}
+
+.pop-up{
+    display: none;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 380px;
+    padding: 20px 30px;
+    background: orange;
+    box-shadow: 2px 2px 5px 5px rgb(26, 25, 25);
+    border-radius: 5px;
+    z-index: 1;
+
+}
+.for-cancel{
+  position:absolute;
+  top: 10px;
+  right: 10px;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 15px;
+  background: rgb(255, 252, 252);
+  color:orange;
+  cursor: pointer;
+}
+
+.log-in-form h1{
+    text-align: center;
+    margin: 5px 0 10px 0;
+    color: #ffffff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    
+  }
+
+  .log-in-form p{
+    font-size: 16px;
+    margin: 2px 5px;
+    color: rgb(255 255 255);
+ 
+ }
+
+ .log-in-form input[type=text],.log-in-form input[type=password]{
+    font-size: 16px;
+    width:97%;
+    padding: 10px 7px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    margin: 0 5px 5px 5px;
+    
+}
+
+.log-in-form input[type=text]:focus,.log-in-form input[type=password]:focus{
+  border: 2px solid rgba(0, 0, 0, 0.829);
+}
+
+
+.log-in-form button{
+    font-size: 18px;
+    font-weight: bold;
+    margin:20px 5px 20px 5px;
+    padding: 10px 15px;
+    width:97%;
+    border-radius: 40px;
+    background: white;
+    color: orange;
+    border: 3px solid orange;
+ }
+
+ .log-in-form button:hover{
+  background: orange;
+  color: white;
+  border: 3px solid white;
+ }
+  
